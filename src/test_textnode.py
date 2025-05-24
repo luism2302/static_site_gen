@@ -13,7 +13,7 @@ class TestTextNode(unittest.TestCase):
 		self.assertEqual(node1, node2)
 
 	def test_ineq_no_text(self):
-		node1 = TextNode("", TextType.NORMAL, "url.gog")
+		node1 = TextNode("", TextType.TEXT, "url.gog")
 		node2 = TextNode("this is a test", TextType.BOLD)
 		self.assertNotEqual(node1, node2)
 

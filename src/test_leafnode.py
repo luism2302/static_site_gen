@@ -15,9 +15,9 @@ class TestTextNode(unittest.TestCase):
 		node = LeafNode(None, "No tag test", None)
 		result = "No tag test"
 		self.assertEqual(node.to_html(), result)
-		
-	
 
 if __name__ == "__main__":
 	unittest.main()
+
+
 	

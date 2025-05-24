@@ -4,7 +4,7 @@ from textnode import text_node_to_html_node, TextType, TextNode, LeafNode
 class TestTextNode(unittest.TestCase):
 	def test_text(self):
 		value = "This is a text node"
-		textNode = TextNode(value, TextType.NORMAL)
+		textNode = TextNode(value, TextType.TEXT)
 		htmlNode = LeafNode(None, value)
 		self.assertEqual(text_node_to_html_node(textNode), htmlNode)
 
